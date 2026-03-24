@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1>SHPE Event Organizer</h1>
+			<p>Internal dashboard for SHPE spring semester event planning</p>
+		</header>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="calendar.html">Event Calendar</a>
+			<a href="events.html">Events</a>
+			<a href="supplies.html">Supplies</a>
+			<a href="finance.html">Finance</a>
+			<a href="reservations.html">Room Reservations</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<div class="container">
+			<div class="contact-card">
+				<h2>Contact & Collaboration</h2>
+				<p class="page-description">Use this page for SHPE contact information and collaboration requests.</p>
+
+				<div class="contact-grid">
+					<div class="contact-info">
+						<h3>SHPE Contact Information</h3>
+						<p><strong>Instagram:</strong> shpe.ualbany</p>
+						<p><strong>Email:</strong> shpe.ualbany@gmail.com</p>
+					</div>
+
+					<div class="contact-form">
+						<h3>Collaboration Request Form</h3>
+
+						<form action="mailto:shpe.ualbany@gmail.com?subject=SHPE Collaboration Request" method="post" enctype="text/plain">
+							<div class="form-group">
+								<label for="orgName">Organization Name</label>
+								<input type="text" id="orgName" name="Organization Name">
+							</div>
+
+							<div class="form-group">
+								<label for="contactPerson">Contact Person</label>
+								<input type="text" id="contactPerson" name="Contact Person">
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="Email">
+							</div>
+
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" name="Message"></textarea>
+							</div>
+
+							<button type="submit">Submit Request</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>
+				<a href="https://www.instagram.com/shpe.ualbany/" target="_blank">Instagram</a> |
+				<a href="mailto:shpe.ualbany@gmail.com">Email</a>
+			</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

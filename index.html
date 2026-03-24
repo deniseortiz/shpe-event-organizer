@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SHPE Event Organizer</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <script src="script.js"></script>
+    <body>
+      <header>
+        <h1>SHPE Event Organizer</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Event Calendar</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="finance.html">Finance</a>
+        <a href="reservations.html">Room Reservations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <main class="container">
+
+        <section class="featured-gallery">
+        <h2>Featured SHPE Familia Moments</h2>
+          <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+
+            <img class="slide" src="shpe1.png" alt="SHPE photo 1">
+            <img class="slide" src="shpe2.png" alt="SHPE photo 2">
+            <img class="slide" src="shpe3.png" alt="SHPE photo 3">
+            <img class="slide" src="shpe4.png" alt="SHPE photo 4">
+            <img class="slide" src="shpe5.png" alt="SHPE photo 5">
+            <img class="slide" src="shpe6.png" alt="SHPE photo 6">
+            <img class="slide" src="shpe7.png" alt="SHPE photo 7">
+            <img class="slide" src="shpe8.png" alt="SHPE photo 8">
+            <button class="next" onclick="moveSlide(1)">❯</button>
+          </div>
+        </section>
+
+        <section class="welcome-card">
+          <h2 id="welcomeMessage">Welcome</h2>
+
+          <p>
+            Enter your school email to unlock access to the navigation bar!
+          </p>
+
+          <label for="emailInput">Enter your school email</label>
+          <input type="email" id="emailInput" placeholder="example@albany.edu">
+
+          <button onclick="verifyEmail()">Verify Email</button>
+
+          <p id="emailOutput"></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          <a href="https://www.instagram.com/shpe.ualbany/" target="_blank">Instagram</a> |
+          <a href="mailto:shpe.ualbany@gmail.com">Email</a>
+        </p>
+      </footer>
+    </body>
+  </html>
